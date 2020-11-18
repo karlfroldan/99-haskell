@@ -1,0 +1,1 @@
+rndSelect :: [a] -> Int 
