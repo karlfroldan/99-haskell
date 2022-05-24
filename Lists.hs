@@ -1,4 +1,4 @@
-module Lists (pack) where
+module Lists (pack, compress, elementAt) where
 
 import Shared 
     (NestedList (..))
@@ -105,6 +105,7 @@ If a list contains repeated elements they should be replaced
 with a single copy of the element. The order of elements should
 not be changed.
 λ> compress "aaaabccaadeeee"
+"abcade"
 -}
 compress :: Eq a => [a] -> [a]
 compress [] = []

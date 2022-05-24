@@ -1,4 +1,5 @@
-module ListsContinued () where
+module ListsContinued 
+    ( split ) where
 
 import Shared
 
