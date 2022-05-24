@@ -106,6 +106,4 @@ ghabcdef
 rotate :: [a] -> Int -> [a]
 rotate xs i 
     | i >= 0    = let (l1, l2) = split xs i in l2 ++ l1
-    | otherwise = let j = length xs 
-                      k = j - abs i
-                  in  rotate xs k
+    | otherwise = rotate xs (length xs - abs i)
